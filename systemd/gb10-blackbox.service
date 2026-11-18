@@ -1,0 +1,8 @@
+[Unit]
+Description=GB10 black box: one reading of temperatures, GPU, load and memory, written through to disk
+Documentation=https://github.com/lightsoutfactory/gb10-blackbox
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/gb10-blackbox record
+Nice=-5

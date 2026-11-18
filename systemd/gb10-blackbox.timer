@@ -1,0 +1,11 @@
+[Unit]
+Description=GB10 black box: a reading every minute
+Documentation=https://github.com/lightsoutfactory/gb10-blackbox
+
+[Timer]
+OnBootSec=20s
+OnUnitActiveSec=60s
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
