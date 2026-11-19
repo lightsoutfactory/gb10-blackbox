@@ -7,7 +7,7 @@ When a GB10 machine powers off on its own, the system journal simply ends mid-se
 This keeps one line a minute, written through to disk with `fsync`, so the minute before a power-off survives it:
 
 ```
-2026-11-14T10:28:46Z hot=95 zones=95,84,94,83,85,82,86 gpu=78C,9.1W,0%,500MHz load=8.46,7.18,7.54 mem=78090/124545MB
+2026-11-19T08:43:21Z hot=95 zones=95,86,95,85,94,86,87 gpu=82C,49.5W,96%,2437MHz load=15.26,13.76,12.00 mem=113342/123970MB
 ```
 
 Every thermal zone, the hottest of them, GPU temperature, power, utilisation and SM clock, load and memory. One Python file, standard library only, a systemd timer, nothing else.
